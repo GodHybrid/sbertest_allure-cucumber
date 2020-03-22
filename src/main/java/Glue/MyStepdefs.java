@@ -1,6 +1,5 @@
 package Glue;
 
-import Pages.Initialization;
 import Steps.BaseSteps;
 import Steps.MortgageFrameSteps;
 import cucumber.api.DataTable;
@@ -12,7 +11,6 @@ import cucumber.api.java.ru.Тогда;
 import Steps.MortgagePageSteps;
 import Steps.StartPageSteps;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MyStepdefs {
