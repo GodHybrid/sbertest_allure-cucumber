@@ -37,12 +37,12 @@
             <scope>compile</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.6.0</version>
-            <scope>compile</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.junit.jupiter</groupId>-->
+<!--            <artifactId>junit-jupiter-api</artifactId>-->
+<!--            <version>5.6.0</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -56,13 +56,6 @@
             <artifactId>jaxb-api</artifactId>
             <version>2.3.0</version>
         </dependency>
-
-<!--        <dependency>-->
-<!--            <groupId>io.qameta.allure</groupId>-->
-<!--            <artifactId>allure-junit5</artifactId>-->
-<!--            <version>2.13.2</version>-->
-<!--            <scope>compile</scope>-->
-<!--        </dependency>-->
 
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -82,11 +75,18 @@
 
     <build>
         <plugins>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
                 <configuration>
+                    <reportsDirectory>${basedir}/target/reports</reportsDirectory>
+                    <includes>
+                        <include>**/AllureTest.java</include>
+                        <include>**/SberIpoteka_Test.java</include>
+                        <include>**/CucumberTest.java</include>
+                    </includes>
                     <testFailureIgnore>false</testFailureIgnore>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
@@ -98,7 +98,6 @@
                         </property>
                     </systemProperties>
                     <systemPropertyVariables>
-<!--                        <outputFolder>${basedir}/target/surefire-reports</outputFolder>-->
                         <allure.results.directory>
                             ${basedir}/target/allure-results
                         </allure.results.directory>
@@ -118,14 +117,41 @@
                     </dependency>
                 </dependencies>
             </plugin>
+
+<!--            <plugin>-->
+<!--                <groupId>io.qameta.allure</groupId>-->
+<!--                <artifactId>allure-maven</artifactId>-->
+<!--                <version>${allure-maven.version}</version>-->
+<!--                <configuration>-->
+<!--                    <reportVersion>2.4.1</reportVersion>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+
             <plugin>
-                <groupId>io.qameta.allure</groupId>
-                <artifactId>allure-maven</artifactId>
-                <version>${allure-maven.version}</version>
+                <groupId>ru.yandex.qatools.allure</groupId>
+                <artifactId>allure-maven-plugin</artifactId>
+                <version>2.5</version>
+                <executions>
+                    <execution>
+                        <id>allure-report</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
                 <configuration>
-                    <reportVersion>2.4.1</reportVersion>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 
