@@ -1,0 +1,14 @@
+Pages\Initialization.class
+Conditions\textApproved.class
+Steps\MortgageFrameSteps.class
+Steps\BaseSteps.class
+Pages\MortgageFrame.class
+Pages\StartPage.class
+Conditions\AllureReporter.class
+Glue\MyStepdefs.class
+Conditions\fieldChanged.class
+Pages\TestProperties.class
+Steps\StartPageSteps.class
+Pages\BasePageObj.class
+Pages\MortgagePage.class
+Steps\MortgagePageSteps.class
