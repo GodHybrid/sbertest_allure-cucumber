@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-MV8RCN5",
+    "children" : [ {
+      "name" : "26276@DESKTOP-MV8RCN5.main(1)",
+      "children" : [ {
+        "name" : "queryTest()",
+        "uid" : "2b12cc389d34835c",
+        "parentUid" : "ebc83d8220575002d6bb0ee7ac381363",
+        "status" : "broken",
+        "time" : {
+          "start" : 1584645777574,
+          "stop" : 1584645777690,
+          "duration" : 116
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ebc83d8220575002d6bb0ee7ac381363"
+    } ],
+    "uid" : "57270c02b52bf2a1bd38f5c6668d19ea"
+  } ]
+}
