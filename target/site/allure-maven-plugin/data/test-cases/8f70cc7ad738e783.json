@@ -1,0 +1,55 @@
+{
+  "uid" : "8f70cc7ad738e783",
+  "name" : "Когда Нажат переключатель Молодой Семьи",
+  "fullName" : "Сценарий: Оформление ипотеки.Когда Нажат переключатель Молодой Семьи",
+  "historyId" : "7947a000ba6d321dd9509df887cb6b64",
+  "time" : {
+    "start" : 1584951812397,
+    "stop" : 1584951812397,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "Сценарий: Оформление ипотеки"
+  }, {
+    "name" : "testMethod",
+    "value" : "Когда Нажат переключатель Молодой Семьи"
+  }, {
+    "name" : "suite",
+    "value" : "Сценарий: Оформление ипотеки"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MV8RCN5"
+  }, {
+    "name" : "thread",
+    "value" : "34788@DESKTOP-MV8RCN5.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8f70cc7ad738e783.json",
+  "parameterValues" : [ ]
+}

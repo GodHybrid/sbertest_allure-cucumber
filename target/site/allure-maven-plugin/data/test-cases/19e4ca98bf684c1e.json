@@ -1,0 +1,55 @@
+{
+  "uid" : "19e4ca98bf684c1e",
+  "name" : "Тогда Открыта и подготовлена страница ипотеки",
+  "fullName" : "Сценарий: Оформление ипотеки.Тогда Открыта и подготовлена страница ипотеки",
+  "historyId" : "b5d84ace2dbe1d316f327233abb55982",
+  "time" : {
+    "start" : 1584951808197,
+    "stop" : 1584951808197,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "Сценарий: Оформление ипотеки"
+  }, {
+    "name" : "testMethod",
+    "value" : "Тогда Открыта и подготовлена страница ипотеки"
+  }, {
+    "name" : "suite",
+    "value" : "Сценарий: Оформление ипотеки"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MV8RCN5"
+  }, {
+    "name" : "thread",
+    "value" : "34788@DESKTOP-MV8RCN5.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "19e4ca98bf684c1e.json",
+  "parameterValues" : [ ]
+}

@@ -2,24 +2,48 @@
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
   "children" : [ {
-    "name" : "Test defects",
+    "name" : "Product defects",
     "children" : [ {
-      "name" : "java.lang.NullPointerException",
+      "name" : "expected:<9,[4] %> but was:<9,[3] %>",
       "children" : [ {
-        "name" : "queryTest()",
-        "uid" : "2b12cc389d34835c",
-        "parentUid" : "5592898b36d684905e31486a23088bda",
-        "status" : "broken",
+        "name" : "queryTest",
+        "uid" : "d87a3906a995ba14",
+        "parentUid" : "46be508ef7cee90d45ca89a1a2abf915",
+        "status" : "failed",
         "time" : {
-          "start" : 1584645777574,
-          "stop" : 1584645777690,
-          "duration" : 116
+          "start" : 1584951773285,
+          "stop" : 1584951794194,
+          "duration" : 20909
         },
-        "flaky" : true,
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "И Выполнен финальный тест",
+        "uid" : "5eb422c69fad143e",
+        "parentUid" : "46be508ef7cee90d45ca89a1a2abf915",
+        "status" : "failed",
+        "time" : {
+          "start" : 1584951813883,
+          "stop" : 1584951813884,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "execute",
+        "uid" : "a6d54c6dfff0e67",
+        "parentUid" : "46be508ef7cee90d45ca89a1a2abf915",
+        "status" : "failed",
+        "time" : {
+          "start" : 1584951815025,
+          "stop" : 1584951834103,
+          "duration" : 19078
+        },
+        "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "5592898b36d684905e31486a23088bda"
+      "uid" : "46be508ef7cee90d45ca89a1a2abf915"
     } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]
 }
