@@ -79,6 +79,7 @@
                     <testFailureIgnore>false</testFailureIgnore>
                     <argLine>
                         -Dfile.encoding=UTF-8 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.jar"
+                        -Dcucumber.options="--tags ${TAGS}"
                     </argLine>
                     <properties>
                         <property>
