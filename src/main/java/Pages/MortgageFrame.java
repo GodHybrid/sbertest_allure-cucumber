@@ -125,6 +125,6 @@ public class MortgageFrame extends BasePageObj
         Assert.assertEquals("2 122 000 ₽", creditSum);
         Assert.assertEquals("17 535 ₽", monthlyPay);
         Assert.assertEquals("29 224 ₽", necInc);
-        Assert.assertEquals("9,3 %", percent);
+        Assert.assertEquals("9,4 %", percent);
     }
 }
