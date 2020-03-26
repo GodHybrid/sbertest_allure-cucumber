@@ -7,7 +7,8 @@ import Conditions.AllureReporter;
 @CucumberOptions(
         features = {"src/test/java/Scenarios"},
         glue = {"Glue/"},
-        plugin = {"Conditions.AllureReporter"}
+        plugin = {"Conditions.AllureReporter"},
+        tags = {"all", "fail", "allure", "junit"}
 )
 
 public class CucumberTest {
