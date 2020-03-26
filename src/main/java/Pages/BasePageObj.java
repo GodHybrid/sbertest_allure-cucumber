@@ -50,8 +50,10 @@ public abstract class BasePageObj
     {
         waitForLoadElement(mainMenu);
 
-        Actions hover = bobDoSomething.moveToElement(waitForLoadElement(driver.findElement(By.xpath(mainMenuXPath.substring(0, mainMenuXPath.length() - 1) + " and contains(text(), '" + menuTab + "')]"))));
-        hover.perform();
+        waitForLoadElement(driver.findElement(By.xpath(mainMenuXPath.substring(0, mainMenuXPath.length() - 1) + " and contains(text(), '" + menuTab + "')]"))).click();
+
+        //Actions hover = bobDoSomething.moveToElement(waitForLoadElement(driver.findElement(By.xpath(mainMenuXPath.substring(0, mainMenuXPath.length() - 1) + " and contains(text(), '" + menuTab + "')]"))));
+        //hover.perform();
 
         waitForLoadElement(subMenu);
 
